@@ -1,0 +1,272 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF92424C1C7FB3F600CCC2A0 /* SandboxMirror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF92424B1C7FB3F600CCC2A0 /* SandboxMirror.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DF9242481C7FB3F600CCC2A0 /* SandboxMirror.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SandboxMirror.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF92424B1C7FB3F600CCC2A0 /* SandboxMirror.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SandboxMirror.cpp; sourceTree = "<group>"; };
+		DF92424D1C7FB3F600CCC2A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF9242441C7FB3F600CCC2A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF92423E1C7FB3F600CCC2A0 = {
+			isa = PBXGroup;
+			children = (
+				DF92424A1C7FB3F600CCC2A0 /* SandboxMirror */,
+				DF9242491C7FB3F600CCC2A0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF9242491C7FB3F600CCC2A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF9242481C7FB3F600CCC2A0 /* SandboxMirror.kext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF92424A1C7FB3F600CCC2A0 /* SandboxMirror */ = {
+			isa = PBXGroup;
+			children = (
+				DF92424B1C7FB3F600CCC2A0 /* SandboxMirror.cpp */,
+				DF92424D1C7FB3F600CCC2A0 /* Info.plist */,
+			);
+			path = SandboxMirror;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DF9242451C7FB3F600CCC2A0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DF9242471C7FB3F600CCC2A0 /* SandboxMirror */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF9242501C7FB3F600CCC2A0 /* Build configuration list for PBXNativeTarget "SandboxMirror" */;
+			buildPhases = (
+				DF9242431C7FB3F600CCC2A0 /* Sources */,
+				DF9242441C7FB3F600CCC2A0 /* Frameworks */,
+				DF9242451C7FB3F600CCC2A0 /* Headers */,
+				DF9242461C7FB3F600CCC2A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SandboxMirror;
+			productName = SandboxMirror;
+			productReference = DF9242481C7FB3F600CCC2A0 /* SandboxMirror.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF92423F1C7FB3F600CCC2A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Steven Michaud";
+				TargetAttributes = {
+					DF9242471C7FB3F600CCC2A0 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = DF9242421C7FB3F600CCC2A0 /* Build configuration list for PBXProject "SandboxMirror" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DF92423E1C7FB3F600CCC2A0;
+			productRefGroup = DF9242491C7FB3F600CCC2A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF9242471C7FB3F600CCC2A0 /* SandboxMirror */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF9242461C7FB3F600CCC2A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF9242431C7FB3F600CCC2A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF92424C1C7FB3F600CCC2A0 /* SandboxMirror.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DF92424E1C7FB3F600CCC2A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DF92424F1C7FB3F600CCC2A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DF9242511C7FB3F600CCC2A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID";
+				INFOPLIST_FILE = SandboxMirror/Info.plist;
+				MODULE_NAME = org.smichaud.SandboxMirror;
+				MODULE_START = SandboxMirror_start;
+				MODULE_STOP = SandboxMirror_stop;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_BUNDLE_IDENTIFIER = org.smichaud.SandboxMirror;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		DF9242521C7FB3F600CCC2A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID";
+				INFOPLIST_FILE = SandboxMirror/Info.plist;
+				MODULE_NAME = org.smichaud.SandboxMirror;
+				MODULE_START = SandboxMirror_start;
+				MODULE_STOP = SandboxMirror_stop;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_BUNDLE_IDENTIFIER = org.smichaud.SandboxMirror;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF9242421C7FB3F600CCC2A0 /* Build configuration list for PBXProject "SandboxMirror" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF92424E1C7FB3F600CCC2A0 /* Debug */,
+				DF92424F1C7FB3F600CCC2A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF9242501C7FB3F600CCC2A0 /* Build configuration list for PBXNativeTarget "SandboxMirror" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF9242511C7FB3F600CCC2A0 /* Debug */,
+				DF9242521C7FB3F600CCC2A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF92423F1C7FB3F600CCC2A0 /* Project object */;
+}

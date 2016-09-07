@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>org.smichaud.sandboxmirrord</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/local/sbin/sandboxmirrord</string>
+	</array>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>OnDemand</key>
+	<true/>
+	<key>MachServices</key>
+	<dict>
+		<key>org.smichaud.sandboxmirrord</key>
+		<dict>
+			<key>HostSpecialPort</key>
+			<integer>16</integer>
+		</dict>
+	</dict>
+	<key>ServiceIPC</key>
+	<true/>
+	<key>POSIXSpawnType</key>
+	<string>Interactive</string>
+</dict>
+</plist>
