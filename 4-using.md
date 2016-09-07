@@ -16,7 +16,8 @@ Apple applications, at least, use XPC to launch child processes, and
 "XPC processes" (unlike "ordinary" child processes) don't inherit
 their parent's environment.  SandboxMirror has a workaround for this,
 but it's only available on OS X 10.11 and up.  For more information
-see `get_xpc_parent()` in `SandboxMirror.cpp`.
+see [`get_xpc_parent()` in
+`SandboxMirror.cpp`](SandboxMirror/SandboxMirror/SandboxMirror.cpp#L712).
 
 Here are the environment variables that SandboxMirror pays attention
 to:
