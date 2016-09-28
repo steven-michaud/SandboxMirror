@@ -35,6 +35,7 @@ Now copy the `SandboxMirror.kext` and `sandboxmirrord` binaries to the
 `/usr/local/sbin/` directory:
 
 `sudo cp -R SandboxMirror.kext /usr/local/sbin`
+<p>
 `sudo cp sandboxmirrord /usr/local/sbin`
 
 Also copy `org.smichaud.sandboxmirrord.plist` to
