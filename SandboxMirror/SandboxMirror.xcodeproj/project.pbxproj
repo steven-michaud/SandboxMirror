@@ -220,6 +220,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Developer ID";
 				INFOPLIST_FILE = SandboxMirror/Info.plist;
+				INSTALL_PATH = /usr/local/sbin;
 				MODULE_NAME = org.smichaud.SandboxMirror;
 				MODULE_START = SandboxMirror_start;
 				MODULE_STOP = SandboxMirror_stop;
@@ -235,6 +236,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Developer ID";
 				INFOPLIST_FILE = SandboxMirror/Info.plist;
+				INSTALL_PATH = /usr/local/sbin;
 				MODULE_NAME = org.smichaud.SandboxMirror;
 				MODULE_START = SandboxMirror_start;
 				MODULE_STOP = SandboxMirror_stop;

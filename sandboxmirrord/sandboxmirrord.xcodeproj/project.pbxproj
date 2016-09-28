@@ -232,6 +232,7 @@
 					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
 				);
 				INFOPLIST_FILE = sandboxmirrord/Info.plist;
+				INSTALL_PATH = /usr/local/sbin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -246,6 +247,7 @@
 					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
 				);
 				INFOPLIST_FILE = sandboxmirrord/Info.plist;
+				INSTALL_PATH = /usr/local/sbin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
