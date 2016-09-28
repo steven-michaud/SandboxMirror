@@ -10,7 +10,7 @@
 	</array>
 	<key>EnableTransactions</key>
 	<true/>
-	<key>OnDemand</key>
+	<key>KeepAlive</key>
 	<true/>
 	<key>MachServices</key>
 	<dict>
@@ -20,7 +20,7 @@
 			<integer>16</integer>
 		</dict>
 	</dict>
-	<key>ServiceIPC</key>
+	<key>RunAtLoad</key>
 	<true/>
 	<key>POSIXSpawnType</key>
 	<string>Interactive</string>
