@@ -32,9 +32,13 @@ final destinations.
 3. Quit Terminal and reboot your computer.
 
 Now copy the `SandboxMirror.kext` and `sandboxmirrord` binaries to the
-`/usr/local/sbin/` directory.  Also copy
-`org.smichaud.sandboxmirrord.plist` to `/Library/LaunchDaemons/` and
-run the following command there:
+`/usr/local/sbin/` directory:
+
+`sudo cp -R SandboxMirror.kext /usr/local/sbin`
+`sudo cp sandboxmirrord /usr/local/sbin`
+
+Also copy `org.smichaud.sandboxmirrord.plist` to
+`/Library/LaunchDaemons/` and run the following command there:
 
 `sudo launchctl load org.smichaud.sandboxmirrord.plist`
 
@@ -70,5 +74,5 @@ Run the following command to unload SandboxMirror.kext:
 `sudo kextunload -b org.smichaud.SandboxMirror`
 
 Once you feel comfortable using SandboxMirror, and if you think it's
-convenient, you can make `SandboxMirror.kext` load at startup by coping
+convenient, you can make `SandboxMirror.kext` load at startup by copying
 `org.smichaud.loadSandboxMirror.plist` to `/Library/LaunchDaemons/`.
