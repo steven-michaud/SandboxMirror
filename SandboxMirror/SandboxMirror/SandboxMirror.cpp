@@ -136,6 +136,7 @@
 #include <IOKit/IOLib.h>
 #include <IOKit/IORegistryEntry.h>
 extern "C" {
+#include <security/mac.h>
 #include <security/mac_policy.h>
 }
 
@@ -1702,23 +1703,29 @@ int hook__mac_syscall(proc_t p, struct __mac_syscall_args *uap, int *retv)
   int retval = ENOENT;
   if (g_mac_syscall_orig) {
     retval = g_mac_syscall_orig(p, uap, retv);
-    if (!strcmp(uap->policy, "Sandbox")) {
-      if ((uap->call == 0) || (uap->call == 1)) {
-        hook_apply_sandbox(retval);
-      }
-      if (uap->call == 2) {
-        hook_check_sandbox((check_sandbox_args_t) uap->args, retval);
-      }
-      int check_get_task_call = -1;
-      if (OSX_Yosemite()) {
-        check_get_task_call = 18;
-      } else if (OSX_ElCapitan()) {
-        check_get_task_call = 21;
-      } else if (macOS_Sierra()) {
-        check_get_task_call = 22;
-      }
-      if ((check_get_task_call >= 0) && (uap->call == check_get_task_call)) {
-        hook_check_get_task((check_get_task_args_t) uap->args, retval);
+    char policy[MAC_MAX_POLICY_NAME];
+    size_t ulen;
+    if (!copyinstr((const user_addr_t)(uap->policy), policy,
+                   sizeof(policy), &ulen))
+    {
+      if (!strcmp(uap->policy, "Sandbox")) {
+        if ((uap->call == 0) || (uap->call == 1)) {
+          hook_apply_sandbox(retval);
+        }
+        if (uap->call == 2) {
+          hook_check_sandbox((check_sandbox_args_t) uap->args, retval);
+        }
+        int check_get_task_call = -1;
+        if (OSX_Yosemite()) {
+          check_get_task_call = 18;
+        } else if (OSX_ElCapitan()) {
+          check_get_task_call = 21;
+        } else if (macOS_Sierra()) {
+          check_get_task_call = 22;
+        }
+        if ((check_get_task_call >= 0) && (uap->call == check_get_task_call)) {
+          hook_check_get_task((check_get_task_args_t) uap->args, retval);
+        }
       }
     }
   }
