@@ -90,7 +90,6 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = "Steven Michaud";
 				TargetAttributes = {
 					DF9242471C7FB3F600CCC2A0 = {
 						CreatedOnToolsVersion = 7.2;
@@ -218,7 +217,7 @@
 		DF9242511C7FB3F600CCC2A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID";
+				CODE_SIGN_IDENTITY = "";
 				INFOPLIST_FILE = SandboxMirror/Info.plist;
 				INSTALL_PATH = /usr/local/sbin;
 				MODULE_NAME = org.smichaud.SandboxMirror;
@@ -234,7 +233,7 @@
 		DF9242521C7FB3F600CCC2A0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID";
+				CODE_SIGN_IDENTITY = "";
 				INFOPLIST_FILE = SandboxMirror/Info.plist;
 				INSTALL_PATH = /usr/local/sbin;
 				MODULE_NAME = org.smichaud.SandboxMirror;

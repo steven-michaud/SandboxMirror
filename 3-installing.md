@@ -51,8 +51,8 @@ line:
 
 `sudo kextutil /usr/local/sbin/SandboxMirror.kext`
 
-Because it won't have been signed using a kernel extension signing
-certificate, you'll see the following error (or something like it):
+Because it won't have been signed, you'll see the following error (or
+something like it):
 
         Diagnostics for SandboxMirror.kext:
         Code Signing Failure: code signature is invalid

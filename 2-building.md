@@ -18,14 +18,6 @@ relatively recent version of XCode.  I recommend building on the
 version of OS X where you'll be using SandboxMirror, and using the
 most recent version of XCode available for that version.
 
-Unless you change their XCode build settings, you'll need a signing
-certificate from Apple to build either `SandboxMirror.kext` or
-`sandboxmirrord`.  See [http://developer.apple.com/]
-(http://developer.apple.com/) for more information.  Stricly speaking,
-I believe this is only required on OS X 10.9.  To turn off code
-signing for either project, set the "Code Signing Identity" to "Don't
-Code Sign" in XCode's build settings.
-
 Once you've dealt with the above, building `SandboxMirror.kext` and
 `sandboxmirrord` should be straightforward.  I ususally just run
 `xcodebuild` from the command line.  This drops release builds into

@@ -107,7 +107,6 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = "Steven Michaud";
 				TargetAttributes = {
 					DF92BD001C7FC50F0037CA32 = {
 						CreatedOnToolsVersion = 7.2;
@@ -225,7 +224,7 @@
 		DF92BD091C7FC50F0037CA32 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID";
+				CODE_SIGN_IDENTITY = "";
 				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -240,7 +239,7 @@
 		DF92BD0A1C7FC50F0037CA32 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID";
+				CODE_SIGN_IDENTITY = "";
 				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
