@@ -135,6 +135,9 @@
 
 #include <IOKit/IOLib.h>
 #include <IOKit/IORegistryEntry.h>
+
+#include <security/mac.h>
+
 extern "C" {
 #include <security/mac_policy.h>
 }
@@ -1699,10 +1702,15 @@ void hook_apply_sandbox(int retval)
 
 int hook__mac_syscall(proc_t p, struct __mac_syscall_args *uap, int *retv)
 {
+  char policy[MAC_MAX_POLICY_NAME];
+  size_t ulen;
   int retval = ENOENT;
   if (g_mac_syscall_orig) {
+    retval = copyinstr((const user_addr_t)(uap->policy), policy, sizeof(policy), &ulen);
+    if (retval)
+      return retval;
     retval = g_mac_syscall_orig(p, uap, retv);
-    if (!strcmp(uap->policy, "Sandbox")) {
+    if (!strcmp(policy, "Sandbox")) {
       if ((uap->call == 0) || (uap->call == 1)) {
         hook_apply_sandbox(retval);
       }
