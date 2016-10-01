@@ -1708,7 +1708,7 @@ int hook__mac_syscall(proc_t p, struct __mac_syscall_args *uap, int *retv)
     if (!copyinstr((const user_addr_t)(uap->policy), policy,
                    sizeof(policy), &ulen))
     {
-      if (!strcmp(uap->policy, "Sandbox")) {
+      if (!strcmp(policy, "Sandbox")) {
         if ((uap->call == 0) || (uap->call == 1)) {
           hook_apply_sandbox(retval);
         }
