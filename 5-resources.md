@@ -50,8 +50,9 @@ from it.
      following two lines to the `.vmx` config file in its `.vmwarevm`
      package directory:
      <p>
-        debugStub.listen.guest64 = "TRUE"
-        debugStub.listen.guest64.remote = "TRUE"
+     `debugStub.listen.guest64 = "TRUE"`
+     <p>
+     `debugStub.listen.guest64.remote = "TRUE"`
      <p>
   2. Download [x86_64_target_definition.py]
      (http://llvm.org/svn/llvm-project/lldb/trunk/examples/python/x86_64_target_definition.py)
@@ -59,17 +60,19 @@ from it.
      <p>
   3. On the development computer, run the following two commands:
      <p>
-        `lldb /Library/Developer/KDKs/KDK_[version].kdk/System/Library/Kernels/kernel`
-        `settings set plugin.process.gdb-remote.target-definition-file /path/to/x86_64_target_definition.py`
+     `lldb /Library/Developer/KDKs/KDK_[version].kdk/System/Library/Kernels/kernel`
+     <p>
+     `settings set plugin.process.gdb-remote.target-definition-file /path/to/x86_64_target_definition.py`
      <p>
   4. Then enter one of the following commands instead of `kdp-remote
      {name_or_ip_address}`.  Use the first if your development
      computer is the VMware Fusion host.  Use the second if it's some
      other computer.
      <p>
-        `gdb-remote 8864`
-        `gdb-remote [fusionhost]:8864`
+     `gdb-remote 8864`
      <p>
+     `gdb-remote [fusionhost]:8864`
+  <p>
   For more information see the following:
   <p>
   [Using the VMware Fusion GDB stub for kernel debugging with LLDB]
