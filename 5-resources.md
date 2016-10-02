@@ -72,7 +72,7 @@ from it.
      `gdb-remote 8864`
      <p>
      `gdb-remote [fusionhost]:8864`
-  <p>
+
   For more information see the following:
   <p>
   [Using the VMware Fusion GDB stub for kernel debugging with LLDB]
