@@ -6571,7 +6571,11 @@ kern_return_t SandboxMirror_start(kmod_info_t *ki, void *d)
 #if defined(MAC_OS_X_VERSION_10_9) && MAC_OS_X_VERSION_MAX_ALLOWED == MAC_OS_X_VERSION_10_9
     SET_HOOK(system_check_sysctl);
 #else
+#if MAC_POLICY_OPS_VERSION <= 45
     SET_HOOK_OVERRIDE_RES(system_check_sysctl, reserved31);
+#else
+    SET_HOOK_OVERRIDE_RES(system_check_sysctl, reserved7);
+#endif
 #endif
     SET_HOOK(vnode_check_rename_from);
     SET_HOOK(vnode_check_rename_to);
